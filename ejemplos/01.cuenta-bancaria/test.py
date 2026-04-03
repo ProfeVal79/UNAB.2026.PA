@@ -1,20 +1,35 @@
 from cuentaBancaria import CuentaBancaria
+#Creamos una cuenta y luego imprimimos los datos y el saldo
+cuenta = CuentaBancaria(500, "Valeria", "Igarzabal")
+print(cuenta.datos_titular())
+print(cuenta.datos_saldo())
 
-# Creación de objeto
-x = CuentaBancaria(10, 'Felipe', 'Morales')
+#Probamos depositando
+print("Depositando $1000")
+print(cuenta.depositar(1000))
+print(cuenta.depositar(-500))
 
-# Invocación de métodos
-print(x.datos_titular())
+#probamos extracción
+print("extracción de $300")
+print(cuenta.extraer(300))
+print(cuenta.extraer(2000))
+print(f"Movimientos de la cuenta: ", cuenta.datos_movimientos())
 
+from cajaAhorro import CajaAhorro
+mi_ahorro = CajaAhorro(1000, "Valeria", "Igarzabal")
+print(mi_ahorro.datos_titular())
+print(mi_ahorro.pagar_con_beneficio(500, "almacen", "sabado"))
+print(mi_ahorro.pagar_con_beneficio(300, "supermercado", "miercoles"))
+print(mi_ahorro.depositar(10000))
+print(mi_ahorro.datos_saldo())
+print(mi_ahorro.pagar_con_beneficio(600, "carniceria", "sabado"))
+print(mi_ahorro.datos_saldo())
+print(mi_ahorro.datos_movimientos())
+print(mi_ahorro.aplicar_interes_mensual())
+print(mi_ahorro.datos_movimientos())
 
-# Operación de deposito
-x.depositar(100000)
-print(x.datos_saldo())
-
-# Operación de extracción
-x.extraer(900000)
-print(x.datos_saldo())
-
-
-# Imprimo el listado de movimientos de la cuenta
-print(x.datos_movimientos())
+#prueba de cuenta corriente
+from Cuenta_corriente import CuentaCorriente
+mi_CC = CuentaCorriente(33000,"Valeria", "Igarzabal", 5000)
+print(mi_CC.extraer(10000))
+print(mi_CC.datos_movimientos())
