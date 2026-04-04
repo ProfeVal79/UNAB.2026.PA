@@ -1,5 +1,5 @@
 # Informe de Actividad: Pilares de POO
-**Alumna:**Valeria Igarzabal
+Alumna: Valeria Igarzabal
 ---
 ## 1. Seleccion de Pilares
 He seleccionado los conceptos de
