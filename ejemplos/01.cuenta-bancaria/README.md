@@ -1,5 +1,6 @@
 # Sistema de Gestión Bancaria (POO)
 **Materia:** **Programación Avanzada - UNAB 2026**
+
 **Alumno:** **Valeria Igarzabal**
 ---
 ## Estructura del Proyecto
