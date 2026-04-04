@@ -1,0 +1,18 @@
+Informe de Actividad: Pilares de POO
+Alumna: Valeria Igarzabal
+
+1- Selección de pilares:
+He seleccionado los conceptos de Herencia y Polimorfismo para explicar el código del archivo animal.py
+2- Explicación de Herencia:
+La Herencia permite que las clases hijas (Perro, Gato, Raton) reutilicen el código de la clase padre (Animal). 
+En mi ejemplo, el __init__ se define una sola vez en el padre para gestionar el nombre y la edad, y todos los hijos
+lo utilizan autimáticamente sin necesidad de repetirlo. Incluso aplique Herencia multinivel, donde la clase Gatito
+hereda de Gato. 
+3- Explicación de Polimorfismo:
+El Polimorfismo permite que diferentes objetos respondan al mismo mensaje de distintas maneras.
+* Aplicación: Cree un método hablar () en todas las clases.
+* Resultado: Aunque en el bucle for llamo al método de la misma forma para todos (elem.hablar()), cada objeto imprime 
+su propio sonido ("Guau", "Miau", "Squeak") dependiendo de su clase.
+4- ejemplo de código:
+El bucle al final del archivo animal.py demuestra estos conceptos:
+for elem in Perro("Spyke"), Gato("Tom"), Raton("Jerry"), Gatito("Mininito"): elem.hablar()
