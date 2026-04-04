@@ -1,4 +1,4 @@
-# Analisis de Arquitectura: Sistema ed Geometría
+# Analisis de Arquitectura: Sistema de Geometría
 ## En este proyecto se implementaron los cuatro pilares de la Programación Orientada a Objetos (POO) para evaluar la estructura de figuras geométricas:
 * ### 1- Abstracción: Se crearon las clases base Figura y PoligonoRegular. Estas clases abstraen la idea general de que todas las figuras tienen un área y un perímetro, sin importar su forma específica.
 * ### 2- Encapsulamiento: Cada clase (como Circulo, Triangulo o Cuadrado) encapsula sus propios datos (radio, base, apotema) y sus métodos de cálculo. Los datos están protegidos dentro de cada objeto mediante self.
