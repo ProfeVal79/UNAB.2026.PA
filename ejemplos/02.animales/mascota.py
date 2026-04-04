@@ -1,15 +1,16 @@
 class Mascota():
-    #nombre = ""
-    #edad = 0
 
-    def __init__(self, nombre, edad):
+    def __init__(self, nombre="", edad=0):
         self.nombre = nombre
-        self.edad = edad
-        # Aquí pueden ir más cosas que se hacen en un constructor
+        # validamos la edad antes de guardarla
+        if edad < 0:
+            print(f"La edad no puede ser negativa. Seteando a 0.")
+            self.edad = 0
+        else:
+            self.edad = edad
 
     def saludar(self):
-        print("¡Hola! Me llamo {} y mi edad es {}".format(
-            self.nombre, self.edad))
+        print(f"¡Hola! Me llamo {self.nombre} y mi edad es {self.edad} años")
 
 
 mascota = Mascota("Pluto", 3)
